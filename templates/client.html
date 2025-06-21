@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client Portal | Hyundai Internship</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0f8bfd;
+      --dark: #0c0e14;
+      --panel: #1a1f2b;
+      --text: #e0e0e0;
+      --accent: #00e5ff;
+      --hover: #1de9b6;
+      --glow: 0 0 12px rgba(0, 229, 255, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #06090f, #1a1f2b);
+      color: var(--text);
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+      min-height: 100vh;
+    }
+
+    h2 {
+      color: var(--blue);
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-shadow: var(--glow);
+    }
+
+    h3 {
+      margin-top: 60px;
+      font-size: 24px;
+      color: var(--accent);
+      text-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+    }
+
+    button {
+      padding: 14px 28px;
+      font-size: 18px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(15, 139, 253, 0.4);
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: var(--hover);
+      color: #000;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(29, 233, 182, 0.6);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      margin-top: 40px;
+      max-width: 420px;
+      width: 100%;
+      border: 2px solid var(--accent);
+      border-radius: 16px;
+      box-shadow: 0 0 16px rgba(0, 229, 255, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 24px rgba(0, 229, 255, 0.6);
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(0, 229, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 0 24px rgba(0, 229, 255, 0.1);
+      backdrop-filter: blur(12px);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 28px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      button {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+    }
+
+    /* Futuristic Glowing Divider */
+    .divider {
+      height: 2px;
+      width: 80%;
+      background: linear-gradient(to right, transparent, var(--accent), transparent);
+      margin: 40px auto;
+    }
+
+    /* Scrollbar style */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 8px;
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: #000;
+    }
+
+    /* Extra animated ring around image */
+    .img-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .img-wrapper::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      border-radius: 50%;
+      border: 2px dashed var(--accent);
+      animation: rotate 12s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Hyundai Client Dashboard</h2>
+    <a href="/download"><button>📥 Download Excel File</button></a>
+
+    <div class="divider"></div>
+
+    <h3>📊 Students per College</h3>
+    
+      <img src="/chart" alt="College Distribution Pie Chart">
+    
+
+    <footer>
+      <p>© 2025 Hyundai Motors | Internship Portal</p>
+    </footer>
+  </div>
+</body>
+</html>

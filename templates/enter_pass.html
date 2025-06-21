@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enter Client Password</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px;
+      background: url("/static/oo.png") no-repeat center top;
+      background-size: cover;
+    }
+    input, button {
+      padding: 12px;
+      margin: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🔐 Client Access</h2>
+  <form method="POST" action="/verify_pass">
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <button type="submit">Enter Panel</button>
+  </form>
+</body>
+</html>
